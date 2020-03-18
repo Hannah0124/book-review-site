@@ -1,0 +1,173 @@
+* {
+  font-family: Helvetica, Arial;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  background-color: #3c4959;
+  color: #FFFFFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+  position: fixed;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  z-index: 1;
+}
+
+nav {
+  position: fixed;
+  top: 71px;
+  right: 20px;
+  background-color: #ffffff;
+  z-index: 2;
+  margin: 0px; 
+  padding: 15px 0 15px 0;
+  width: 100%;
+  text-align: right;
+}
+
+nav > a {
+  margin-left: 10px;
+  color: #3c4959;
+  padding: 5px;
+}
+
+a:hover {
+  background-color: gold;
+}
+
+main {
+  position: absolute;
+  top: 120px;
+  margin: 0px 20px 0px 20px;
+}
+
+.row {
+  display: flex;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+ 
+.column {
+  float: left;
+  margin: 5px;
+  width: 50%;
+}
+
+.book-cover-img {
+  width: 250px;
+  display: inline-flex;
+}
+
+
+/* book detail page */
+.book-container {
+  display: flex;
+  margin-left: 20px;
+  top: 0px;
+}
+
+.book-title {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.book-info {
+  margin-top: 40px;
+  margin-left: 55px;
+}
+
+.book-info > li {
+  margin-bottom: 10px;
+}
+
+.description-container {
+  margin: 50px 20px 30px 20px;
+  color: #404142
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
+.review-container {
+  /* background-color: #edf1f4; */
+  width: 100%;
+  padding: 30px;
+}
+
+.review-title {
+  font-size: 30px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+
+.second-review-title {
+  margin-top: 50px;
+}
+
+.review-header {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.review-sub-info {
+  text-align: right;
+}
+
+.review-contents {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.review-container-1 {
+  background-color: #edf1f4;
+  padding: 0 50px 0 50px;
+
+}
+
+.review-container-2 {
+  background-color: #e1e5e8;
+  padding: 0 50px 0 50px;
+
+}
+
+article > section {
+  padding-bottom: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.welcome-feedback {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 40px;
+}
+
+
+.site-maintainer-img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.contact-container {
+  display: flex;
+}
+
+footer {
+  position: fixed;
+  margin: 20px; 
+  right: 0px;
+  bottom: 0px;
+}
+
+
+.logo {
+  padding-left: 10px;
+}
