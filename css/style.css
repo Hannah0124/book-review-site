@@ -32,9 +32,10 @@ nav > a {
   margin-left: 10px;
   color: #3c4959;
   padding: 5px;
+  font-weight: bold;
 }
 
-a:hover {
+nav > a:hover {
   background-color: gold;
 }
 
@@ -45,21 +46,32 @@ main {
 }
 
 .row {
+  margin: 50px;
   display: flex;
-  overflow: auto;
-  overflow-y: hidden;
+  flex-wrap: wrap;
+  /* important! => horizontal center */
+  justify-content: center;    
 }
 
- 
+.book-shelf {
+  margin-left: auto;
+  margin-right: auto;
+} 
+
 .column {
-  float: left;
   margin: 5px;
   width: 50%;
 }
 
 .book-cover-img {
-  width: 250px;
-  display: inline-flex;
+  width: 300px;
+  padding: 45px 45px 0 0;
+  cursor: pointer;
+}
+
+.book-cover-img:hover, 
+.eloquent-ruby-cover:hover {
+  opacity: 0.3;
 }
 
 
@@ -68,6 +80,10 @@ main {
   display: flex;
   margin-left: 20px;
   top: 0px;
+}
+
+.eloquent-ruby-cover {
+  cursor: pointer;
 }
 
 .book-title {
@@ -166,7 +182,6 @@ footer {
   right: 0px;
   bottom: 0px;
 }
-
 
 .logo {
   padding-left: 10px;
