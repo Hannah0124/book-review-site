@@ -19,13 +19,14 @@
 nav {
   position: fixed;
   top: 71px;
-  right: 20px;
+  right: 0px;
   background-color: #ffffff;
   z-index: 2;
   margin: 0px; 
-  padding: 15px 0 15px 0;
+  padding: 15px 15px 15px 0;
   width: 100%;
   text-align: right;
+  box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
 }
 
 nav > a {
@@ -41,12 +42,12 @@ nav > a:hover {
 
 main {
   position: absolute;
-  top: 120px;
+  top: 130px;
   margin: 0px 20px 0px 20px;
 }
 
 .row {
-  margin: 50px;
+  margin: 25px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
   /* important! => horizontal center */
@@ -64,9 +65,12 @@ main {
 }
 
 .book-cover-img {
-  width: 300px;
-  padding: 45px 45px 0 0;
+  width: 250px;
+  /* padding: 15px 15px 30px 15px;; */
+  margin: 15px 15px 30px 15px;
   cursor: pointer;
+  box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+  border-radius: 1%;
 }
 
 .book-cover-img:hover, 
@@ -76,33 +80,55 @@ main {
 
 
 /* book detail page */
+
 .book-container {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 20px;
   top: 0px;
+  padding-left: 20px;
+  justify-content: center;
 }
 
 .eloquent-ruby-cover {
   cursor: pointer;
+  box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+  border-radius: 1%;
+  margin: 25px 50px 0 0;
 }
 
 .book-title {
-  margin-left: 20px;
-  margin-bottom: 15px;
+  margin: 45px 0 15px 0;
+  text-align: center;
 }
 
 .book-info {
-  margin-top: 40px;
-  margin-left: 55px;
+  margin-top: auto; 
+  margin-bottom: auto;
+  
 }
 
 .book-info > li {
   margin-bottom: 10px;
 }
 
+.book-info > li:last-child {
+  margin-bottom: 0px;
+}
+
+
 .description-container {
   margin: 50px 20px 30px 20px;
   color: #404142
+}
+
+.description-container > h3 {
+  padding-left: 20px;
+
+}
+
+.description-contents {
+  padding: 20px;
 }
 
 h3 {
